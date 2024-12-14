@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/auth", authRoutes);
 app.use("/api", authenticateToken, bookRoutes);
 app.get("/", async (req, res) => {
-  res.send(<h1>This stage3 booking web backend challange</h1>);
+  res.send("<h1>This stage3 booking web backend challange</h1>");
 });
 
 app.listen(PORT, () => {
